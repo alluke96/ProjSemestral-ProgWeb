@@ -64,15 +64,15 @@
 
 .welcome{
   width: 100vw;
-  height: 6000px;
+  height: 1000px;
   color: white;
 }
 
 .bg-img{
   background-color: black;
-  background-image: url("https://c.pxhere.com/photos/13/e8/automobile_automotive_black_and_white_car_dark_vehicle-915436.jpg!d");
+  background-image: url("https://t3.ftcdn.net/jpg/00/67/32/42/360_F_67324202_9eSsx7EgHkDEnK0AGRkCvliSrd3DCL0C.jpg");
   background-position: center center; 
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 .topnav {
