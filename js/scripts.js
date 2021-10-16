@@ -2,7 +2,7 @@ function cadastro(){
     alert("TODO")
 }
 
-function hamburger() {
+function setResponsiveHamburger() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
       x.className += " responsive";

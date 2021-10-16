@@ -23,10 +23,6 @@
 }
 
 .center a {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: xx-large;
   padding: 20;
 }
 
@@ -38,10 +34,6 @@
 }
 
 .right a {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: large;
   padding: 10;
 }
 
@@ -64,9 +56,13 @@
   width: 100vw;
   height: 600px;
   color: white;
-  background-color: rgb(31, 31, 31);
-  background-image: url("/images/car-black-bg.jpg");
-  background-size: contain;
+}
+
+.bg-img{
+  background-color: black;
+  background-image: url("https://c.pxhere.com/photos/13/e8/automobile_automotive_black_and_white_car_dark_vehicle-915436.jpg!d");
+  background-position: center center; 
+  background-repeat: no-repeat;
 }
 
 .topnav {
@@ -95,9 +91,9 @@
 
 /* When the screen shrinks, colapses into a hamburger icon */
 @media screen and (max-width: 900px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a{display: none;}
   .topnav a.icon {
-    float: right;
+    align-items: left;
     display: block;
   }
 }
@@ -116,5 +112,3 @@
     text-align: left;
   }
 }
-
-/* End W3 Topnav */
