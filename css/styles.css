@@ -84,8 +84,8 @@
 }
 
 .topnav a.active {
-  background-color: #444444;
-  color: white;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
 }
 
 /* Hide the hamburger icon */
