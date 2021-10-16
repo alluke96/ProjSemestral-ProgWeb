@@ -2,6 +2,10 @@ function cadastro(){
     alert("TODO")
 }
 
+function moreOptions(){
+    alert("TODO")
+}
+
 function setResponsiveHamburger() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
