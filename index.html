@@ -21,10 +21,9 @@
                     </a>
                 </div>
                 <div class="center">
-                    <a href="index.html" class="active">Home</a>
-                    <a href="estoque.html">Estoque</a>
-                    <a href="index.html">Sobre Nós</a>
-                    <a href="index.html">Contato</a>
+                    <button onclick="scrollToFunction('div_home')" class="w3-button active">Home</button>
+                    <button onclick="scrollToFunction('div_estoque')" class="w3-button">Estoque</button>
+                    <button onclick="scrollToFunction('div_contato')" class="w3-button">Contato</button>
                 </div>
                 <div class="right">
                     <a href="#abrirModal" id="login"> Login/Cadastro
@@ -40,7 +39,7 @@
             </div>
         </header>
 
-        <div class="bg-img center block">
+        <div class="bg-img center block" id="div_home">
             <div>
                 Cadastre-se para as melhores promoções da sua vida!
             </div>
@@ -76,7 +75,7 @@
                 </div>
             </div>
 
-            <div class="div_maisvendidos block">
+            <div class="div_maisvendidos block" id="div_estoque">
                 <h2>Produtos mais vendidos</h2>
                 <div class="flex">
                     <div class="w3-card-4">
@@ -122,11 +121,11 @@
                 </div>
             </div>
 
-            <div class="block center">
+            <div class="block center" id="div_contato">
                 <h2>Endereço</h2> <br>
                 <h4>Av. Iraí, 16 - Weissópolis, Pinhais - PR, 83321-000</h4> <br>
                 <h2>Contato</h2> <br>
-                <h4>Fone: (41) 3035-9999 </h4> <br>
+                <h4>Fone: (41) 3035-9999 </h4>
                 <h4>Email: contato@indiecar.com </h4> <br>
             </div>
         </div>

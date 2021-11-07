@@ -44,3 +44,17 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+function scrollToFunction(div) {
+  // var elmntToView = document.getElementById(div);
+  // elmntToView.scrollIntoView(); 
+
+  const yOffset = 100; 
+  const element = document.getElementById(div);
+  const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+  if(div == 'div_home')
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  else
+    window.scrollTo({top: y, behavior: 'smooth'});
+}
