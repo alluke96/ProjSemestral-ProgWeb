@@ -27,7 +27,7 @@
                     <a href="index.html">Contato</a>
                 </div>
                 <div class="right">
-                    <a href="index.html"> Login/Cadastro
+                    <a href="#abrirModal" id="login"> Login/Cadastro
                         <i class="fas fa-sign-in-alt"> </i></a>
                     <a href="index.html"> Pesquisar
                         <i class="fas fa-search"></i></a>
@@ -40,18 +40,45 @@
             </div>
         </header>
 
-        <div class="welcome bg-img center">
-            <div style="padding: 100px;">
+        <div class="bg-img center block">
+            <div>
                 Cadastre-se para as melhores promoções da sua vida!
             </div>
-            <div style="padding: 50px;">
-                <button class="w3-button w3-white" onclick="cadastro()">
-                    Cadastre-se
-                </button>
+            <div style="padding: 200px;">
+                <a href="#abrirModal" class="w3-button w3-white">Cadastre-se</a>
+                <div id="abrirModal" class="modal">
+                    <a href="#fechar" title="Fechar" class="fechar"> X </a>
+
+                    <h3>CADASTRO</h3> 
+                    <div id="login">
+                        <input type="text" name="email_login" id="email_login" placeholder="Email">
+                        <input type="password" name="senha_login" id="senha_login" placeholder="Senha">
+                        <a style="font-size: small;">Esqueci a senha</a>
+                        <button onclick="login()" class="w3-green w3-button" style="padding: 5px;"> Login </button>
+                        <a href="cadastro.html" class="w3-light-blue w3-button">Quero me cadastrar!</a>
+                    </div>
+
+                    <div id="cadastro" class="w3-hide">
+                        <input type="text" name="nome_cadastro" id="nome_cadastro" placeholder="Nome">
+                        <input type="text" name="email_cadastro" id="email_cadastro" placeholder="Email">
+                        <input type="text" name="data_nascimento_cadastro" id="data_nascimento_cadastro" placeholder="Data de nascimento" maxlength="8">
+                        <label for="sexo_M">Masculino</label>
+                        <input type="radio" name="sexo_cadastro" id="sexo_M">
+                        <label for="sexo_F">Feminino</label>
+                        <input type="radio" name="sexo_cadastro" id="sexo_F">
+                        <label for="sexo_X">Prefiro não informar</label>
+                        <input type="radio" name="sexo_cadastro" id="sexo_X" >
+                        <input type="password" name="senha_cadastro" id="senha_cadastro" placeholder="Senha">
+                        <input type="password" name="cofirmasenha_cadastro" id="confirmasenha_cadastro" placeholder="Confirmar senha">
+
+                        <a href="#fechar" class="w3-green w3-button" style="padding: 5px;">Confirmar</a>
+                    </div>
+                </div>
             </div>
-            <div style="padding: 150px;">
+
+            <div class="div_maisvendidos block">
                 <h2>Produtos mais vendidos</h2>
-                <div class="flex" style="padding: 50px;">
+                <div class="flex">
                     <div class="w3-card-4">
                         <img class="card-img" src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/ferrari_f8_tributo.jpg?itok=1TG8_Tnx">
                         <div class="w3-container w3-center">
@@ -71,13 +98,42 @@
                         </div>
                     </div>
                 </div>
-                <button class="w3-button w3-white" onclick="moreOptions()">
-                    Mais opções
-                </button>
+                <a href="estoque.html" class="w3-button w3-white"> Mais opções </a>
+            </div>
+
+            <div class="block center">
+                <h2>Demonstração dos produtos</h2> <br>
+                <iframe width="800" height="400" src="https://www.youtube.com/embed/RGe1br5Ixiw"></iframe>
+            </div>
+
+            <div class="block center">
+                <h2>Depoimentos de nossos clientes</h2> <br>
+                <div class="w3-white comment">
+                    <p> "Loja totalmente confiável, 100% segura!" </p>
+                    <p class="autor">Fernando Dias</p>
+                </div>
+                <div class="w3-white comment">
+                    <p> "Comprei meu carro e ele chegou em perfeitas condições dentro do prazo!" </p>
+                    <p class="autor">Gabriel Fernandes da Cunha</p>
+                </div>
+                <div class="w3-white comment">
+                    <p> "No início fiquei com medo, mas depois do atendimento incrível que eu recebi, fiquei muito mais tranquilo." </p>
+                    <p class="autor">Felipe Gonçalves Alves</p>
+                </div>
+            </div>
+
+            <div class="block center">
+                <h2>Endereço</h2> <br>
+                <h4>Av. Iraí, 16 - Weissópolis, Pinhais - PR, 83321-000</h4> <br>
+                <h2>Contato</h2> <br>
+                <h4>Fone: (41) 3035-9999 </h4> <br>
+                <h4>Email: contato@indiecar.com </h4> <br>
             </div>
         </div>
 
-        <footer class="center">
+        <button onclick="topFunction()" id="btn_scrollTop" title="Go to top">Voltar ao início</button>
+
+        <footer class="center block">
             <a href="https://pt-br.facebook.com/"><i class="fab fa-facebook-square"></i></a>
             <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
             <a href="https://br.pinterest.com/"><i class="fab fa-pinterest-square"></i></a>
