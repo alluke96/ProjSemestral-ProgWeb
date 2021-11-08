@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap" rel="stylesheet"> 
         <script src="js/scripts.js"></script>
+        <script src="js/carrinho.js"></script>
 
         <title>Página inicial - IndieCar</title>
     </head>
@@ -28,7 +29,7 @@
                         <i class="fas fa-sign-in-alt"> </i></a>
                     <a href="estoque.html"> Pesquisar
                         <i class="fas fa-search"></i></a>
-                    <a href="index.html"> Carrinho
+                    <a href="carrinho.html"> Carrinho
                         <i class="fas fa-shopping-cart"></i></a>
                     <!-- Hidden hamburger icon -->
                     <a href="javascript:void(0);" class="icon" onclick="setResponsiveHamburger()">
@@ -51,20 +52,7 @@
             </div>
         </div>
 
-        <div id="cadastro" class="center block cadastro">
-            <input type="text" name="nome_cadastro" id="nome_cadastro" placeholder="Nome"> <br>
-            <input type="text" name="email_cadastro" id="email_cadastro" placeholder="Email"> <br>
-            <input type="text" name="data_nascimento_cadastro" id="data_nascimento_cadastro" placeholder="Data de nascimento" maxlength="8"> <br>
-            <div class="w3-white">
-                Sexo <br>
-                <input type="radio" name="sexo_cadastro" id="sexo_M"><label for="sexo_M">Masculino</label></input> <br>
-                <input type="radio" name="sexo_cadastro" id="sexo_F"><label for="sexo_F">Feminino</label></iput> <br>
-                <input type="radio" name="sexo_cadastro" id="sexo_X" ><label for="sexo_X">Prefiro não informar</label></input> <br>
-            </div>
-            <input type="password" name="senha_cadastro" id="senha_cadastro" placeholder="Senha"> <br>
-            <input type="password" name="cofirmasenha_cadastro" id="confirmasenha_cadastro" placeholder="Confirmar senha"> <br>
-
-            <a href="index.html" class="w3-green w3-button" style="padding: 5px;">Confirmar</a>
+        <div class="center block" id="div_carrinho">
         </div>
     </body>
 </html>
