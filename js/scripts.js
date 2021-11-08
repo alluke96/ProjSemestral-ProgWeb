@@ -87,7 +87,7 @@ function scrollToFunction(div) {
   // var elmntToView = document.getElementById(div);
   // elmntToView.scrollIntoView(); 
 
-  const yOffset = 100; 
+  const yOffset = 70; 
   const element = document.getElementById(div);
   const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
