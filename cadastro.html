@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap" rel="stylesheet"> 
+        <script src="js/scripts.js"></script>
+
+        <title>Página inicial - IndieCar</title>
+    </head>
+    <body>
+        <header class="w3-center w3-black">
+            Compre seu carro sem sair de casa!
+            <div class="header topnav w3-white" id="myTopnav">
+                <div class="left">
+                    <a href="index.html">
+                        <img src="images/logo.png" class="responsive w3-bar-item">
+                    </a>
+                </div>
+                <div class="center">
+                    <button onclick="scrollToFunction('div_home')" class="w3-button active">Home</button>
+                    <button onclick="scrollToFunction('div_estoque')" class="w3-button">Estoque</button>
+                    <button onclick="scrollToFunction('div_contato')" class="w3-button">Contato</button>
+                </div>
+                <div class="right">
+                    <a href="#abrirModal" id="login"> Login/Cadastro
+                        <i class="fas fa-sign-in-alt"> </i></a>
+                    <a href="index.html"> Pesquisar
+                        <i class="fas fa-search"></i></a>
+                    <a href="index.html"> Carrinho
+                        <i class="fas fa-shopping-cart"></i></a>
+                    <!-- Hidden hamburger icon -->
+                    <a href="javascript:void(0);" class="icon" onclick="setResponsiveHamburger()">
+                        <i class="fa fa-bars"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <div id="cadastro" class="center block cadastro">
+            <input type="text" name="nome_cadastro" id="nome_cadastro" placeholder="Nome"> <br>
+            <input type="text" name="email_cadastro" id="email_cadastro" placeholder="Email"> <br>
+            <input type="text" name="data_nascimento_cadastro" id="data_nascimento_cadastro" placeholder="Data de nascimento" maxlength="8"> <br>
+            <div class="w3-white">
+                Sexo <br>
+                <input type="radio" name="sexo_cadastro" id="sexo_M"><label for="sexo_M">Masculino</label></input> <br>
+                <input type="radio" name="sexo_cadastro" id="sexo_F"><label for="sexo_F">Feminino</label></iput> <br>
+                <input type="radio" name="sexo_cadastro" id="sexo_X" ><label for="sexo_X">Prefiro não informar</label></input> <br>
+            </div>
+            <input type="password" name="senha_cadastro" id="senha_cadastro" placeholder="Senha"> <br>
+            <input type="password" name="cofirmasenha_cadastro" id="confirmasenha_cadastro" placeholder="Confirmar senha"> <br>
+
+            <a href="index.html" class="w3-green w3-button" style="padding: 5px;">Confirmar</a>
+        </div>
+    </body>
+</html>
