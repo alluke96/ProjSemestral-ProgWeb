@@ -1,6 +1,6 @@
-var listaProdutos = [ [0, 'Ferrari F8 Tributo', 'https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/ferrari_f8_tributo.jpg?itok=1TG8_Tnx', false],
-                      [1, 'Lamborghini Huracán Evo', 'https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/huracan-evo-.jpg?itok=8Yc8R3_R', false],
-                      [2, 'Ford GT', 'https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/ford-gt_1.jpg?itok=RTPBCvpp', false]]
+var listaProdutos = [ [0, 'Ferrari F8 Tributo', 'https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/ferrari_f8_tributo.jpg?itok=1TG8_Tnx', false, '3.5'],
+                      [1, 'Lamborghini Huracán Evo', 'https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/huracan-evo-.jpg?itok=8Yc8R3_R', false, '4.2'],
+                      [2, 'Ford GT', 'https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/ford-gt_1.jpg?itok=RTPBCvpp', false, '2.1']]
 var carrinho = []
 
 window.onload = function () {
@@ -15,6 +15,7 @@ function montarCardProdutos() {
     conteudo += `<div class="w3-card-4">`
     conteudo += `<img class="card-img" src="` + listaProdutos[i][2] + `">`
     conteudo += `<p>` + listaProdutos[i][1] + `</p>`
+    conteudo += `<p class="price"> R$ ` + listaProdutos[i][4] + `</p>`
     if(listaProdutos[i][3] == false) {
       conteudo += `<button class="w3-button w3-green" onclick="comprar(` + listaProdutos[i][0] + `)"> Comprar </button>`
       conteudo += `</div>`
