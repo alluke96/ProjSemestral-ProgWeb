@@ -76,6 +76,11 @@ footer {
   color: #8d0000;
 }
 
+.correct_align {
+  margin-left: -6px;
+  margin-top: -9px;
+}
+
 .flex {
   display: flex;
   padding: 50px;
