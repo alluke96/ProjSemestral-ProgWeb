@@ -7,7 +7,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap" rel="stylesheet"> 
-        <script src="js/scripts.js"></script>
         <script src="js/carrinho.js"></script>
 
         <title>Página inicial - IndieCar</title>
@@ -38,23 +37,21 @@
             </div>
         </header>
         <div class="center" id="div_home">
-            <div style="padding: 200px;">
-                <div id="abrirModal" class="modal">
-                    <a href="#fechar" title="Fechar" class="fechar"> <i class="correct_align fas fa-times"></i> </a>
+            <div id="abrirModal" class="modal">
+                <a href="#fechar" title="Fechar" class="fechar"> <i class="correct_align fas fa-times"></i> </a>
 
-                    <h3>LOGIN</h3> 
-                    <div id="login">
-                        <input type="text" name="email_login" id="email_login" placeholder="Email">
-                        <input type="password" name="senha_login" id="senha_login" placeholder="Senha">
-                        <a style="font-size: small;">Esqueci a senha</a>
-                        <button onclick="login()" class="w3-green w3-button" style="padding: 5px;"> Login </button>
-                        <a href="cadastro.html" class="w3-light-blue w3-button">Quero me cadastrar!</a>
-                    </div>
+                <h3>LOGIN</h3> 
+                <div id="login">
+                    <input type="text" name="email_login" id="email_login" placeholder="Email">
+                    <input type="password" name="senha_login" id="senha_login" placeholder="Senha">
+                    <a style="font-size: small;">Esqueci a senha</a>
+                    <button onclick="login()" class="w3-green w3-button" style="padding: 5px;"> Login </button>
+                    <a href="cadastro.html" class="w3-light-blue w3-button">Quero me cadastrar!</a>
                 </div>
             </div>
         </div>
 
-        <div class="center block" id="div_carrinho">
+        <div class="center w3-black" id="div_carrinho"  style="display:grid">
         </div>
     </body>
 </html>

@@ -215,6 +215,17 @@ footer {
   max-height: auto;
 }
 
+.card_carrinho {
+  width: 200px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.crush {
+  max-width: 25%;
+  border-radius: 5%;
+}
+
 #btn_scrollTop {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -256,3 +267,4 @@ footer {
   display: block;
   padding: 100px 550px;
 }
+
