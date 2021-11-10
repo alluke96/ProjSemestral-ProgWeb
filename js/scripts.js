@@ -22,16 +22,17 @@ function montarCardProdutos() {
     conteudo += `<div class="w3-card-4">`
     conteudo += `<img class="card-img" src="` + listaProdutos[i][2] + `">`
     conteudo += `<p>` + listaProdutos[i][1] + `</p>`
-    conteudo += `<p class="price"> R$ ` + listaProdutos[i][4] + `</p>`
-    if(listaProdutos[i][3] == false) {
-      conteudo += `<button class="w3-button w3-green" onclick="comprar(` + listaProdutos[i][0] + `)"> Comprar </button>`
-      conteudo += `</div>`
-    } else {
-      conteudo += `<button class="w3-button w3-disabled" onclick="comprar(` + listaProdutos[i][0] + `) disabled"> Adicionado ao carrinho </button>`
-      conteudo += `</div>`
-    }
-    
 
+    // Resolvi não colocar opção de comprar na página inicial
+
+    // conteudo += `<p class="price"> R$ ` + listaProdutos[i][4] + `</p>`
+    // if(listaProdutos[i][3] == false) {
+    //   conteudo += `<button class="w3-button w3-green" onclick="comprar(` + listaProdutos[i][0] + `)"> Comprar </button>`
+    //   conteudo += `</div>`
+    // } else {
+    //   conteudo += `<button class="w3-button w3-disabled" onclick="comprar(` + listaProdutos[i][0] + `) disabled"> Adicionado ao carrinho </button>`
+    //   conteudo += `</div>`
+    // }
     document.getElementById('div-produto').innerHTML += conteudo
   }
 }
@@ -52,6 +53,7 @@ function login(){
     window.localStorage.setItem('user', 'admin')
     let res = document.getElementById('login')
     res.innerHTML = 'admin'
+    res.href = ''
     modal.setAttribute('class', 'w3-hide')
     alert('Bem vindo admin!')
   }

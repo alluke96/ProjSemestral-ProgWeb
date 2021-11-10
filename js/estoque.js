@@ -1,13 +1,15 @@
-var listaProdutos = [ [0, 'Ferrari F8 Tributo', 'https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/ferrari_f8_tributo.jpg?itok=1TG8_Tnx', false, '3.500.000,00'],
-                      [1, 'Lamborghini Huracán Evo', 'https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/huracan-evo-.jpg?itok=8Yc8R3_R', false, '4.200.000,00'],
-                      [2, 'Ford GT', 'https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/ford-gt_1.jpg?itok=RTPBCvpp', false, '2.100.000,00'],
-                      [3, 'Porsche Cayenne', 'https://cdn.adtechpanda.com/bf4c74a9-9a7a-4f9c-9d26-8203bc2f158e/', false, '459.000,00'],
-                      [4, 'Land Rover Range Rover Evoque', 'https://cdn.adtechpanda.com/1101afe7-106a-4b1f-9617-56702bf9c635/', false, '281.000,00'],
-                      [5, 'Mercedes Benz GLA', 'https://cdn.adtechpanda.com/83cac15f-276d-4f59-ad55-c4cdf42a0caf/', false, '185.000,00'],
-                      [6, 'Volvo XC60 ', 'https://cdn.adtechpanda.com/2ac0ec2a-c71d-4cad-b94a-99e84ecc44a5/', false, '245.000,00'],
-                      [7, 'BMW X1', 'https://cdn.adtechpanda.com/c0e99d16-dc26-4636-993a-2b6308c36d7f/', false, '195.000,00'],
-                      [8, 'Toyota SW4', 'https://cdn.adtechpanda.com/e7fb3e2c-5762-4631-acad-ba102918ea65/', false, '175.000,00'],
-                      [9, 'BMW Série 3', 'https://cdn.adtechpanda.com/eff0c72d-1150-4d0a-b0b2-596077ca17df/', false, '195.000,00']]
+var listaProdutos = [ [0, 'Ferrari F8 Tributo', 'https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/ferrari_f8_tributo.jpg?itok=1TG8_Tnx', false, '3.500.000,00', 3500000],
+                      [1, 'Lamborghini Huracán Evo', 'https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/huracan-evo-.jpg?itok=8Yc8R3_R', false, '4.200.000,00', 4200000],
+                      [2, 'Ford GT', 'https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/ford-gt_1.jpg?itok=RTPBCvpp', false, '2.100.000,00', 2100000],
+                      [3, 'Porsche Cayenne', 'https://cdn.adtechpanda.com/bf4c74a9-9a7a-4f9c-9d26-8203bc2f158e/', false, '459.000,00', 459000],
+                      [4, 'Land Rover Range Rover Evoque', 'https://cdn.adtechpanda.com/1101afe7-106a-4b1f-9617-56702bf9c635/', false, '281.000,00', 281000],
+                      [5, 'Mercedes Benz GLA', 'https://cdn.adtechpanda.com/83cac15f-276d-4f59-ad55-c4cdf42a0caf/', false, '185.000,00', 185000],
+                      [6, 'Volvo XC60 ', 'https://cdn.adtechpanda.com/2ac0ec2a-c71d-4cad-b94a-99e84ecc44a5/', false, '245.000,00', 245000],
+                      [7, 'BMW X1', 'https://cdn.adtechpanda.com/c0e99d16-dc26-4636-993a-2b6308c36d7f/', false, '195.000,00', 195000],
+                      [8, 'Toyota SW4', 'https://cdn.adtechpanda.com/e7fb3e2c-5762-4631-acad-ba102918ea65/', false, '175.000,00', 175000],
+                      [9, 'BMW Série 3', 'https://cdn.adtechpanda.com/eff0c72d-1150-4d0a-b0b2-596077ca17df/', false, '195.000,00', 195000]]
+// [id, nome, img, no_carrinho, preco_exibicao, preco_numeral]
+
 var carrinho = []
 
 window.onload = function () {

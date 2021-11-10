@@ -222,8 +222,13 @@ footer {
 }
 
 .crush {
-  max-width: 25%;
+  max-width: 20%;
   border-radius: 5%;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #btn_scrollTop {
