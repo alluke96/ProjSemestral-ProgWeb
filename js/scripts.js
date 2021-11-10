@@ -2,9 +2,16 @@ var listaProdutos = [ [0, 'Ferrari F8 Tributo', 'https://www.autocar.co.uk/sites
                       [1, 'Lamborghini Huracán Evo', 'https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/huracan-evo-.jpg?itok=8Yc8R3_R', false, '4.2'],
                       [2, 'Ford GT', 'https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/ford-gt_1.jpg?itok=RTPBCvpp', false, '2.1']]
 var carrinho = []
+var user
 
 window.onload = function () {
   montarCardProdutos()
+  user = window.localStorage.getItem('user')
+  if(user == 'admin'){
+    let res = document.getElementById('login')
+    res.innerHTML = 'admin'
+    res.href = '' // removes the function to open modal
+  }
 }
 
 function montarCardProdutos() {
@@ -40,9 +47,12 @@ function comprar(id) {
 function login(){
   let login = document.getElementById('email_login')
   let senha = document.getElementById('senha_login')
+  let modal = document.getElementById('abrirModal')
   if(login.value == 'admin' && senha.value == 'admin'){
+    window.localStorage.setItem('user', 'admin')
     let res = document.getElementById('login')
-    res.innerText = 'admin'
+    res.innerHTML = 'admin'
+    modal.setAttribute('class', 'w3-hide')
     alert('Bem vindo admin!')
   }
 }
